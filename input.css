@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .body {
+    @apply w-full h-screen flex justify-center items-center text-white bg-[#545454] select-none;
+  }
+  .main {
+    @apply max-w-[400px] shadow-2xl shadow-[#343434] rounded-lg;
+  }
+  .form {
+    @apply bg-[#343434] rounded-lg;
+  }
+  .display {
+    @apply bg-[#2D2D2D] rounded-lg w-full h-[180px] flex flex-col justify-center items-center;
+  }
+  .keypad {
+    @apply w-full h-auto grid grid-cols-4 gap-5 p-5 justify-center items-center;
+  }
+  .inp1 {
+    @apply w-full text-center text-gray-300 bg-transparent;
+  }
+  .inp2 {
+    @apply w-full text-center bg-transparent text-3xl font-medium outline-none border-0;
+  }
+  .btn1 {
+    @apply flex justify-center items-center w-[50px] h-[50px] cursor-pointer text-white active:text-orange-500;
+  }
+  .btn2 {
+    @apply border border-white active:border-orange-500 rounded-full flex justify-center items-center w-[50px] h-[50px] cursor-pointer;
+  }
+  .ac {
+    @apply rounded-full border border-white active:border-orange-500 col-span-2 flex justify-center items-center w-full h-[50px] cursor-pointer;
+  }
+  .eq {
+    @apply rounded-full border border-white active:border-orange-500 flex justify-center items-center w-[50px] h-full row-span-2 cursor-pointer;
+  }
+}
